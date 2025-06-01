@@ -4,61 +4,186 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Discover the best AI tools categorized by use case and earn money through ads and affiliate links." />
-  <meta name="author" content="AI" />
+  <meta name="author" content="Your Name" />
   <title>AI Tools Directory</title>
-  <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="AI tools, AI directory, AI resources, affiliate marketing, ad revenue" />
-  <title>AI Tools Directory</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Google AdSense -->
-  
-  <style>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .tool-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  max-width: 600px;
-}
-
-</div>
-
-  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-white shadow p-4">
-    <h1 class="text-2xl font-bold text-center">🧠 AI Tools Directory</h1>
-    <p class="text-center text-sm">Find the best AI tools by category and use case</p>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+      <h1 class="text-3xl font-extrabold">🧠 AI Tools Directory</h1>
+      <p class="mt-1 text-gray-500">Search for AI tools by name, use case, or category</p>
+    </div>
   </header>
-  <div style="margin-top: 30px;">
-  <a href="https://www.buymeacoffee.com/aiweb" target="_blank">
-    <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" 
-         alt="Buy Me A Coffee" style="height: 50px;" />
-  </a>
-</div>
-  <main class="max-w-6xl mx-auto p-4">
+
+  <!-- Search Section -->
+  <main class="max-w-6xl mx-auto px-4 py-12">
     <!-- Search Bar -->
-    <div class="mb-6">
-      <input type="text" id="searchBar" placeholder="Search by name, use case, or category (e.g., coding, writing)..." class="w-full p-3 border rounded shadow" onkeyup="filterTools()">
+    <div class="mb-8">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Type to search AI tools (e.g., coding, writing, design)…"
+        class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        onkeyup="filterTools()"
+      />
     </div>
 
-    <!-- Tool Cards -->
-    <div id="toolGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Tool Cards rendered by JS -->
+    <!-- Search Results (shown only when there is a query) -->
+    <section id="searchResultsSection" class="mb-12 hidden">
+      <h2 class="text-2xl font-semibold mb-6">🔍 Search Results</h2>
+      <div id="searchResultsGrid" class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+      <p id="noResultsMessage" class="text-center text-gray-500 mt-4 hidden">
+        No tools match your search.
+      </p>
+    </section>
+
+    <!-- Donation Button -->
+    <div class="flex justify-center mb-12">
+      <a href="https://www.buymeacoffee.com/aiweb" target="_blank" class="transform hover:scale-105 transition">
+        <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
+             alt="Buy Me A Coffee" class="h-12">
+      </a>
     </div>
 
+    <!-- Amazon Affiliate Products Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6">💸 Featured Amazon Products</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+          <h3 class="text-xl font-bold text-gray-900">📘 AI Superpowers by Kai-Fu Lee</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Learn how China and Silicon Valley are shaping the future of AI in this best-selling book.</p>
+          <a href="https://www.amazon.com/dp/B07G79WRY8?tag=aitools0b-20" target="_blank"
+             class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+          <h3 class="text-xl font-bold text-gray-900">🧠 Artificial Intelligence: A Guide for Thinking Humans</h3>
+          <p class="mt-2 text-gray-600 flex-grow">A clear, balanced guide to how AI works and what it means for our future.</p>
+          <a href="https://www.amazon.com/dp/B07N5KXDZQ?tag=aitools0b-20" target="_blank"
+             class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+          <h3 class="text-xl font-bold text-gray-900">💻 Raspberry Pi 4 Model B 8GB</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Perfect for building your own AI or machine learning edge devices at home.</p>
+          <a href="https://www.amazon.com/dp/B08BJHS3X8?tag=aitools0b-20" target="_blank"
+             class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+          <h3 class="text-xl font-bold text-gray-900">🤖 Arduino Starter Kit</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Build AI-powered robots or automation systems using this popular kit.</p>
+          <a href="https://www.amazon.com/dp/B009UKZV0A?tag=aitools0b-20" target="_blank"
+             class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+          <h3 class="text-xl font-bold text-gray-900">📚 Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</h3>
+          <p class="mt-2 text-gray-600 flex-grow">A practical guide to real-world machine learning projects.</p>
+          <a href="https://www.amazon.com/dp/1492032646?tag=aitools0b-20" target="_blank"
+             class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+      </div>
+      <!-- Affiliate Disclosure -->
+      <p class="mt-8 text-sm text-gray-500 italic text-center">
+        As an Amazon Associate, I earn from qualifying purchases.
+      </p>
+    </section>
+
+    <!-- Other Affiliate Offers Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6">💼 Other Affiliate Offers</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Affiliate Card 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">🎨 Canva Pro Subscription</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Access premium templates, background remover, and AI tools on Canva.</p>
+          <a href="https://www.canva.com/pricing?ref=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            Get Canva Pro
+          </a>
+        </div>
+        <!-- Affiliate Card 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">🚀 Udemy AI Courses</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Top-rated AI and machine learning courses on Udemy at a discount.</p>
+          <a href="https://www.udemy.com/courses/search/?q=ai&ref=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            Browse Courses
+          </a>
+        </div>
+        <!-- Affiliate Card 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">🛠️ Jetson Nano Developer Kit</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Start your edge-AI projects with NVIDIA’s Jetson Nano.</p>
+          <a href="https://www.amazon.com/dp/B08BZP47FR?tag=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            Buy on Amazon
+          </a>
+        </div>
+        <!-- Affiliate Card 4 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">🔐 Dashlane Password Manager</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Secure and manage your AI project credentials with Dashlane.</p>
+          <a href="https://www.dashlane.com/premium?ref=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            Start Premium
+          </a>
+        </div>
+        <!-- Affiliate Card 5 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">📈 SEMrush SEO Toolkit</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Improve your AI-related content’s ranking with SEMrush’s features.</p>
+          <a href="https://www.semrush.com/prices/?ref=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            Explore Plans
+          </a>
+        </div>
+        <!-- Affiliate Card 6 -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col hover:shadow-lg transition">
+          <h3 class="text-xl font-bold text-gray-900">🧑‍💻 Pluralsight Tech Skills</h3>
+          <p class="mt-2 text-gray-600 flex-grow">Unlimited access to AI and software development courses on Pluralsight.</p>
+          <a href="https://www.pluralsight.com/plans?ref=affiliateID" target="_blank"
+             class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md font-medium transition">
+            View Plans
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- All AI Tools (always visible at bottom) -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6">🗂️ All AI Tools</h2>
+      <div id="allToolsGrid" class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-center text-gray-500 text-sm">
+        © 2025 Your Name. This site uses affiliate links.
+      </div>
+    </footer>
   </main>
 
-  <footer class="text-center text-xs text-gray-500 p-4 mt-10">
-    © 2025 unknown user. This site uses affiliate links.
-  </footer>
-
-  <!-- JavaScript -->
+  <!-- JavaScript: render & filter tool cards -->
   <script>
+    // Array of AI tools
     const tools = [
           { name: 'ChatGPT', category: 'Writing', desc: 'Conversational AI for writing, coding, and more.', link: 'https://chat.openai.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg' },
           { name: 'Midjourney', category: 'Design', desc: 'Create stunning AI-generated art from text prompts.', link: 'https://www.midjourney.com/', logo: 'https://upload.wikimedia.org/wikipedia/en/7/7b/Midjourney_Logo.png' },
@@ -152,42 +277,75 @@
 ];
 
 
-    function renderTools() {
-      const toolGrid = document.getElementById('toolGrid');
-      toolGrid.innerHTML = '';
+    function renderAllTools() {
+      const allGrid = document.getElementById('allToolsGrid');
+      allGrid.innerHTML = '';
       tools.forEach(tool => {
         const card = document.createElement('div');
-        card.className = 'bg-white p-4 rounded shadow tool-card';
-        card.setAttribute('data-name', tool.name);
-        card.setAttribute('data-category', tool.category);
-        card.setAttribute('data-desc', tool.desc);
+        card.className = 'bg-white rounded-lg shadow-lg p-6 flex flex-col hover:shadow-xl transition';
         card.innerHTML = `
-          <img src="${tool.logo}" alt="${tool.name} Logo" class="w-12 h-12 mb-2">
-          <h2 class="text-lg font-semibold">${tool.name}</h2>
-          <p class="text-sm text-gray-600">${tool.desc}</p>
-          <a href="${tool.link}" target="_blank" class="text-blue-500 text-sm mt-2 inline-block">Visit Site →</a>
+          <img src="${tool.logo}" alt="${tool.name} Logo" class="w-12 h-12 mb-3 mx-auto">
+          <h2 class="text-lg font-semibold text-gray-900 text-center">${tool.name}</h2>
+          <p class="mt-2 text-gray-600 text-sm flex-grow">${tool.desc}</p>
+          <a href="${tool.link}" target="_blank" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium text-center">
+            Visit Site →
+          </a>
         `;
-        toolGrid.appendChild(card);
+        allGrid.appendChild(card);
       });
     }
 
     function filterTools() {
-      const searchValue = document.getElementById('searchBar').value.toLowerCase();
-      const toolCards = document.querySelectorAll('.tool-card');
+      const searchValue = document.getElementById('searchBar').value.trim().toLowerCase();
+      const resultsSection = document.getElementById('searchResultsSection');
+      const resultsGrid = document.getElementById('searchResultsGrid');
+      const noResultsMessage = document.getElementById('noResultsMessage');
 
-      toolCards.forEach(card => {
-        const name = card.getAttribute('data-name').toLowerCase();
-        const category = card.getAttribute('data-category').toLowerCase();
-        const desc = card.getAttribute('data-desc').toLowerCase();
-        if (name.includes(searchValue) || category.includes(searchValue) || desc.includes(searchValue)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+      // If search box is empty, hide results section
+      if (searchValue === '') {
+        resultsGrid.innerHTML = '';
+        noResultsMessage.classList.add('hidden');
+        resultsSection.classList.add('hidden');
+        return;
+      }
+
+      // Otherwise, show results section and filter
+      resultsSection.classList.remove('hidden');
+      const matching = tools.filter(tool => {
+        return (
+          tool.name.toLowerCase().includes(searchValue) ||
+          tool.category.toLowerCase().includes(searchValue) ||
+          tool.desc.toLowerCase().includes(searchValue)
+        );
       });
+
+      // Clear previous results
+      resultsGrid.innerHTML = '';
+
+      if (matching.length === 0) {
+        // No matches found
+        noResultsMessage.classList.remove('hidden');
+      } else {
+        noResultsMessage.classList.add('hidden');
+        // Render each matching card
+        matching.forEach(tool => {
+          const card = document.createElement('div');
+          card.className = 'bg-white rounded-lg shadow-lg p-6 flex flex-col hover:shadow-xl transition';
+          card.innerHTML = `
+            <img src="${tool.logo}" alt="${tool.name} Logo" class="w-12 h-12 mb-3 mx-auto">
+            <h2 class="text-lg font-semibold text-gray-900 text-center">${tool.name}</h2>
+            <p class="mt-2 text-gray-600 text-sm flex-grow">${tool.desc}</p>
+            <a href="${tool.link}" target="_blank" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium text-center">
+              Visit Site →
+            </a>
+          `;
+          resultsGrid.appendChild(card);
+        });
+      }
     }
 
-    window.addEventListener('DOMContentLoaded', renderTools);
+    // On page load, render all tools
+    window.addEventListener('DOMContentLoaded', renderAllTools);
   </script>
 </body>
 </html>
