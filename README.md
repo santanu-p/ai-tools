@@ -18,7 +18,7 @@ A beautifully designed AI tools aggregator that helps users **search, discover, 
 
 ## 📸 Preview
 
-![AI Tools Directory Screenshot](https://github.com/santanu-p/ai-tools/blob/main/favicon_io/favicon-16x16.png)
+![AI Tools Directory Screenshot](https://github.com/santanu-p/ai-tools/blob/main/favicon_io/favicon-32x32.png)
 
 ## 🛠️ Tech Stack
 
