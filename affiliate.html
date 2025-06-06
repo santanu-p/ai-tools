@@ -60,7 +60,8 @@
       }
     </script>
     <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" loading="lazy">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"></noscript>
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
@@ -170,6 +171,6 @@
     </footer>
     </main>
     <!-- JavaScript: render & filter tool cards -->
-    <script src="script.js" async defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
