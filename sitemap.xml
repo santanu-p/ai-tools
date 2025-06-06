@@ -9,7 +9,23 @@
 
 <url>
   <loc>https://santanu-p.github.io/ai-tools/</loc>
-  <lastmod>2025-06-03T13:07:50+00:00</lastmod>
+  <lastmod>2025-06-06T15:30:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://santanu-p.github.io/ai-tools/index.html</loc>
+  <lastmod>2025-06-06T15:30:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santanu-p.github.io/ai-tools/affiliate.html</loc>
+  <lastmod>2025-06-06T15:30:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://santanu-p.github.io/ai-tools/other-affiliate.html</loc>
+  <lastmod>2025-06-06T15:30:23+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
