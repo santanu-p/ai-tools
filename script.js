@@ -86,8 +86,129 @@ const tools = [
   {name: 'Anyword', category: 'Marketing', desc: 'AI copywriting tool optimized for marketing and ad campaigns.', link: 'https://anyword.com/', logo: 'https://anyword.com/favicon.ico'},
   {name: 'Beautiful.ai', category: 'Presentation', desc: 'AI-driven presentation design for professional slides.', link: 'https://www.beautiful.ai/', logo: 'https://www.beautiful.ai/favicon.ico'},
   {name: 'Mubert', category: 'Music', desc: 'AI-generated music for creators and developers.', link: 'https://mubert.com/', logo: 'https://mubert.com/favicon.ico'},
-  {name: 'Elicit', category: 'Research', desc: 'AI research assistant for literature reviews and data analysis.', link: 'https://elicit.org/', logo: 'https://elicit.org/favicon.ico'}
+  {name: 'Elicit', category: 'Research', desc: 'AI research assistant for literature reviews and data analysis.', link: 'https://elicit.org/', logo: 'https://elicit.org/favicon.ico'},
   // Add more tools as needed, up to 100 total
+
+  { name: 'Bard', 
+  category: 'Conversational AI', 
+  desc: 'Google AI language model for text generation and analysis.', 
+  link: 'https://bard.google.com/', 
+  logo: 'https://bard.google.com/favicon.ico' 
+},
+{ name: 'Whisper', 
+  category: 'Speech Recognition', 
+  desc: 'OpenAI speech recognition system for accurate transcription.', 
+  link: 'https://openai.com/research/whisper', 
+  logo: 'https://openai.com/favicon.ico' 
+},
+{ name: 'Amazon CodeWhisperer', 
+  category: 'Coding', 
+  desc: 'AI coding companion that provides real-time suggestions.', 
+  link: 'https://aws.amazon.com/codewhisperer/', 
+  logo: 'https://aws.amazon.com/favicon.ico' 
+},
+{ name: 'Anthropic Claude 3', 
+  category: 'Conversational AI', 
+  desc: 'Advanced AI model with enhanced reasoning and accuracy.', 
+  link: 'https://www.anthropic.com/claude', 
+  logo: 'https://www.anthropic.com/favicon.ico' 
+},
+{ name: 'AssemblyAI', 
+  category: 'Speech Recognition', 
+  desc: 'AI APIs for speech recognition and audio intelligence.', 
+  link: 'https://www.assemblyai.com/', 
+  logo: 'https://www.assemblyai.com/favicon.ico' 
+},
+{ name: 'Runway Gen-2', 
+  category: 'Video Generation', 
+  desc: 'AI system for generating and editing videos from text.', 
+  link: 'https://runwayml.com/gen-2', 
+  logo: 'https://runwayml.com/favicon.ico' 
+},
+{ name: 'Adobe Sensei', 
+  category: 'Creative Suite', 
+  desc: 'AI features across Adobe creative applications.', 
+  link: 'https://www.adobe.com/sensei.html', 
+  logo: 'https://www.adobe.com/favicon.ico' 
+},
+{ name: 'Sourcegraph Cody', 
+  category: 'Coding', 
+  desc: 'AI code assistant for searching and understanding codebases.', 
+  link: 'https://about.sourcegraph.com/cody', 
+  logo: 'https://sourcegraph.com/favicon.ico' 
+},
+{ name: 'Mistral AI', 
+  category: 'Language Models', 
+  desc: 'Open-source large language models with commercial applications.', 
+  link: 'https://mistral.ai/', 
+  logo: 'https://mistral.ai/favicon.ico' 
+},
+{ name: 'LangChain', 
+  category: 'Development', 
+  desc: 'Framework for developing applications with LLMs.', 
+  link: 'https://langchain.com/', 
+  logo: 'https://langchain.com/favicon.ico' 
+},
+{ name: 'Mixtral', 
+  category: 'Language Models', 
+  desc: 'Advanced mixture-of-experts language model by Mistral AI.', 
+  link: 'https://mistral.ai/news/mixtral-of-experts/', 
+  logo: 'https://mistral.ai/favicon.ico' 
+},
+{ name: 'Typeface', 
+  category: 'Marketing', 
+  desc: 'AI platform for brand-consistent content creation.', 
+  link: 'https://www.typeface.ai/', 
+  logo: 'https://www.typeface.ai/favicon.ico' 
+},
+{ name: 'Lindy', 
+  category: 'Writing', 
+  desc: 'AI writing assistant for long-form content and books.', 
+  link: 'https://www.lindy.ai/', 
+  logo: 'https://www.lindy.ai/favicon.ico' 
+},
+{ name: 'Inferkit', 
+  category: 'Writing', 
+  desc: 'AI text generation tool for creative writing.', 
+  link: 'https://inferkit.com/', 
+  logo: 'https://inferkit.com/favicon.ico' 
+},
+{ name: 'Movio', 
+  category: 'Video', 
+  desc: 'AI spokesperson video creator from text.', 
+  link: 'https://www.movio.la/', 
+  logo: 'https://www.movio.la/favicon.ico' 
+},
+{ name: 'Scenario', 
+  category: 'Game Development', 
+  desc: 'AI-powered game asset generation platform.', 
+  link: 'https://www.scenario.com/', 
+  logo: 'https://www.scenario.com/favicon.ico' 
+},
+{ name: 'Krisp', 
+  category: 'Audio', 
+  desc: 'AI-powered noise cancellation for calls.', 
+  link: 'https://krisp.ai/', 
+  logo: 'https://krisp.ai/favicon.ico' 
+},
+{ name: 'Seamless M4T', 
+  category: 'Translation', 
+  desc: 'Meta AI model for multilingual translation and transcription.', 
+  link: 'https://ai.meta.com/resources/models-and-libraries/seamless-communication/', 
+  logo: 'https://ai.meta.com/favicon.ico' 
+},
+{ name: 'Duet AI', 
+  category: 'Productivity', 
+  desc: 'Google Cloud AI assistant for developers and workspace.', 
+  link: 'https://cloud.google.com/duet-ai', 
+  logo: 'https://cloud.google.com/favicon.ico' 
+},
+{ name: 'Inflection-2', 
+  category: 'Language Models', 
+  desc: 'Advanced language model by Inflection AI.', 
+  link: 'https://inflection.ai/', 
+  logo: 'https://inflection.ai/favicon.ico' 
+}
 ];
 
 
