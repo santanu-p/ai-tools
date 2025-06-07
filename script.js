@@ -208,6 +208,90 @@ const tools = [
   desc: 'Advanced language model by Inflection AI.', 
   link: 'https://inflection.ai/', 
   logo: 'https://inflection.ai/favicon.ico' 
+},
+{
+  name: 'Leonardo AI',
+  category: 'Image Generation',
+  desc: 'Create production-quality visual assets with AI for games, art, and design.',
+  link: 'https://leonardo.ai/',
+  logo: 'https://leonardo.ai/favicon.ico'
+},
+{
+  name: 'You.com',
+  category: 'Search',
+  desc: 'AI-powered search engine and chatbot with integrated apps and summarization.',
+  link: 'https://you.com/',
+  logo: 'https://you.com/favicon.ico'
+},
+{
+  name: 'Phind',
+  category: 'Coding Assistant',
+  desc: 'AI search engine for developers to get instant coding answers and context.',
+  link: 'https://phind.com/',
+  logo: 'https://phind.com/favicon.ico'
+},
+{
+  name: 'Supernormal',
+  category: 'Productivity',
+  desc: 'AI-powered meeting notes, summaries, and action items for teams.',
+  link: 'https://supernormal.com/',
+  logo: 'https://supernormal.com/favicon.ico'
+},
+{
+  name: 'Harpa AI',
+  category: 'Automation',
+  desc: 'AI Chrome extension for web automation, scraping, and chat with any site.',
+  link: 'https://harpa.ai/',
+  logo: 'https://harpa.ai/favicon.ico'
+},
+{
+  name: 'ChatPDF',
+  category: 'Document Analysis',
+  desc: 'AI that allows you to chat with PDFs and receive answers from documents.',
+  link: 'https://www.chatpdf.com/',
+  logo: 'https://www.chatpdf.com/favicon.ico'
+},
+{
+  name: 'Genmo',
+  category: 'Video',
+  desc: 'Create videos from text with generative AI animation and storytelling.',
+  link: 'https://genmo.ai/',
+  logo: 'https://genmo.ai/favicon.ico'
+},
+{
+  name: 'Gamma',
+  category: 'Presentation',
+  desc: 'AI-powered platform for creating engaging presentations and docs.',
+  link: 'https://gamma.app/',
+  logo: 'https://gamma.app/favicon.ico'
+},
+{
+  name: 'Papercup',
+  category: 'Voice/Video',
+  desc: 'AI for dubbing and translating videos with synthetic voices.',
+  link: 'https://www.papercup.com/',
+  logo: 'https://www.papercup.com/favicon.ico'
+},
+{
+  name: 'Socratic',
+  category: 'Education',
+  desc: 'Google\'s AI learning app that helps students answer homework questions.',
+  link: 'https://socratic.org/',
+  logo: 'https://socratic.org/favicon.ico'
+},
+{
+  name: 'Adept',
+  category: 'Productivity',
+  desc: 'AI agents that automate tasks on your computer and across web apps.',
+  link: 'https://www.adept.ai/',
+  logo: 'https://www.adept.ai/favicon.ico'
+},
+{
+  name: 'Deep Nostalgia',
+  category: 'Image Editing',
+  desc: 'AI tool to animate old photos and bring portraits to life.',
+  link: 'https://www.myheritage.com/deep-nostalgia',
+  logo: 'https://www.myheritage.com/favicon.ico'
 }
 ];
 
