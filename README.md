@@ -33,3 +33,8 @@ A beautifully designed AI tools aggregator that helps users **search, discover, 
 
 We welcome contributions! Submit a PR or open an issue to suggest new tools or improvements.
 
+## License
+
+This project is **not open source**. All rights reserved.
+
+Do not copy, use, or distribute this code without explicit written permission from the author.
