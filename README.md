@@ -47,7 +47,7 @@ Do not copy, use, or distribute this code without explicit written permission fr
 This project is an *online directory* designed to help users **discover and compare different AI tools**.
 It uses a **central list of tool data** to dynamically **display visual cards** for each tool.
 Users can easily **search and filter** this list to find specific tools.
-The site's **basic page layout** includes dedicated **sections for affiliate products** and is configured with **metadata for search engines**.
+The site's **basic page layout** includes dedicated **sections for affiliate products**.
 
 
 ## Visual Overview
